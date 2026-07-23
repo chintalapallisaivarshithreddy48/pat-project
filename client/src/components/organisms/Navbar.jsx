@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Link, NavLink } from 'react-router-dom'
 import { Menu, Sparkles } from 'lucide-react'
 import { navItems, profile } from '../../data/content'
+import ThemeToggle from './ThemeToggle'
 
 export default function Navbar() {
   return (
@@ -26,9 +27,12 @@ export default function Navbar() {
             </NavLink>
           ))}
         </nav>
-        <button className="rounded-full border border-white/10 bg-white/5 p-3 text-slate-300 transition hover:bg-white/10 md:hidden">
-          <Menu size={18} />
-        </button>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <button className="rounded-full border border-white/10 bg-white/5 p-3 text-slate-300 transition hover:bg-white/10 md:hidden">
+            <Menu size={18} />
+          </button>
+        </div>
       </div>
     </motion.header>
   )
