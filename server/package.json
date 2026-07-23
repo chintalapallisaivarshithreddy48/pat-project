@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.31.1",
+    "cors": "^2.8.5",
+    "express": "^5.0.1",
+    "mongoose": "^8.11.0",
+    "multer": "^1.24.0",
+    "nodemailer": "^6.9.0",
+    "validator": "^13.6.0"
+  }
+}
